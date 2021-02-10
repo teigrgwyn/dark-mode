@@ -22,7 +22,7 @@ const Navbar = (props) => {
     e.preventDefault();
     props.setDarkMode(!props.darkMode);
     
-    console.log("useDarkLocalStorage Changed To: " + window.localStorage.darkToggle);
+    console.log("useDarkLocalStorage Chg: " + window.localStorage.darkToggle);
   };
   return (
     <nav className="navbar">

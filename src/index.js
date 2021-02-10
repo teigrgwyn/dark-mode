@@ -29,32 +29,3 @@ const App = () => {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-
-
-
-
-
-// const useToggle = (key, initialValue) => {
-//   const [value, setValue] = useLocalStorage(key, initialValue);
-//   const handleChanges = updatedValue => {
-//     setValue(updatedValue);
-//   }
-//   return [value, setValue, handleChanges];
-// }
-
-// const useLocalStorage = (key, initialValue) => {
-//   // use the value already stored if the key has already been saved to local storage for user instead of the initialValue set
-//   const [storedValue, setStoredValue] = useState(() => {
-//     const item = window.localStorage.getItem(key);
-//     console.log("useLocalStorage:");
-//     console.log(key);
-//     return item ? JSON.parse(item) : initialValue;
-//   })
-//   const setValue = value => {
-//     setStoredValue(value);
-//     window.localStorage.setItem(key, JSON.stringify(value));
-//   }
-//   return [storedValue, setValue];
-// }
-
-// useInput(props.setDarkMode, !props.darkMode);
